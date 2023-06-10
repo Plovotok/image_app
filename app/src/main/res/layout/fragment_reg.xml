@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="Reg.RegFragment"
+
+    android:orientation="vertical"
+    android:background="@drawable/background_new">
+
+
+    <com.vicmikhailau.maskededittext.MaskedEditText
+        android:id="@+id/etPhone"
+        android:layout_width="364dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/phone_number"
+        android:minHeight="48dp"
+        app:mask="+7 (###)###-##-##"
+        android:inputType="phone"
+        android:layout_marginTop="340dp"
+        android:background="@drawable/bg_form"/>
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="364dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:hint="@string/pass_et"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_form"/>
+
+    <Button
+        android:id="@+id/reg_btn_first"
+        android:layout_width="364dp"
+        android:layout_height="66dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/valab"
+        android:text="@string/registr"
+        android:textSize="30sp"
+        app:cornerRadius="20dp" />
+
+    <ProgressBar
+        android:id="@+id/regProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-230dp"/>
+
+</LinearLayout>

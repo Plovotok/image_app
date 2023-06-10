@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="image.ImageFragment"
+    android:orientation="vertical"
+    android:background="@drawable/background_new">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_pics"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        tools:listitem="@layout/rv_item"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <Button
+        android:id="@+id/reset_btn"
+        android:layout_width="364dp"
+        android:layout_height="66dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/reset_btn_color"
+        android:text="@string/reset"
+        android:textSize="30sp"
+        app:cornerRadius="20dp" />
+
+    <Button
+        android:id="@+id/test_btn"
+        android:layout_width="364dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/reset_btn_color"
+        android:text="@string/test"
+        android:textSize="20sp"
+        app:cornerRadius="20dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
